@@ -47,12 +47,13 @@ contract Vault is  Ownable, AccessControlEnumerable {
         _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
     }
 
+    
     function withdraw(
         uint256 _amount,
         address _to
     ) external onlyWithDrawer {
         require(withdrawEnable, "Withdraw is not available");
-        require(_amount <= maxWithdrawAmount, "Exceed maxinum amount");
+        require(_amount <= maxWithdrawAmount, "Exceed maximum amount");
         token.transfer(_to, _amount);
         emit Withdrawal(_amount, _to, block.timestamp);
     }
