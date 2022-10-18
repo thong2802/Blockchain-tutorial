@@ -6,6 +6,7 @@
   "scripts": {
     "compile" : "hardhat compile",
     "deploy"  : "hardhat run scripts/deploy.ts --network",
+    "deployTokenPermit"  : "hardhat run scripts/deployTokenPermit.ts --network localhost",
     "test"    : "hardhat test",
     "verify"  : "hardhat verify --network"
   },

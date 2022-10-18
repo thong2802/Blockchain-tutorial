@@ -1,5 +1,10 @@
 {
-    "dev": {},
-    "bsc_testnet": { },
-    "main": { }
+  "dev": {},
+  "bsc_testnet": {
+    "Floppy": "0xA27513b041D24fd7c85a3B626F4E79F2e32a988E",
+    "Vault": "0x70614BA8fE820E99F656A8aC34eB46B49b92A4A7",
+    "USDT": "0x6675f7B1666A9Dc8fe64933c52216173B293b901",
+    "FLPCrowdSale": "0xB3D27611565ac76762B78fF4484ed423Ea93B66B"
+  },
+  "main": {}
 }
